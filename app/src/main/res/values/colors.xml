@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2d2f2c</color>
+    <color name="colorPrimaryDark">#030516</color>
+    <color name="colorAccent">#82CAC6</color>
+    <color name="bottomNavColor">#82CAC6</color>
+    <color name="btnSignIn">#6B232B</color>
+    <color name="btnSignUp">#E6E5E0</color>
+
+
+</resources>

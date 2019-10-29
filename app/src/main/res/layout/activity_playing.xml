@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Playing">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="GUESS CHARACTER BY NAME"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        >
+    </TextView>
+    <ImageView
+        android:id="@+id/question_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/logo"
+        android:layout_width="300dp"
+        android:layout_height="150dp">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/question_text"
+        android:text="QUESTION"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/question_image"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <RelativeLayout
+        android:id="@+id/group"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:orientation="vertical"
+           android:id="@+id/questions"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingTop="10dp"
+           >
+
+           <Button
+               android:id="@+id/btnAnswerA"
+
+               android:textColor="@android:color/white"
+               android:textStyle="bold"
+               android:background="@color/colorAccent"
+               android:layout_margin="8dp"
+               android:foreground="?android:selectableItemBackground"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </Button>
+           <Button
+               android:id="@+id/btnAnswerB"
+
+               android:textColor="@android:color/white"
+               android:textStyle="bold"
+               android:background="@color/colorAccent"
+               android:layout_margin="8dp"
+               android:foreground="?android:selectableItemBackground"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </Button>
+           <Button
+               android:id="@+id/btnAnswerC"
+
+               android:textColor="@android:color/white"
+               android:textStyle="bold"
+               android:background="@color/colorAccent"
+               android:layout_margin="8dp"
+               android:foreground="?android:selectableItemBackground"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </Button>
+           <Button
+               android:id="@+id/btnAnswerD"
+
+               android:textColor="@android:color/white"
+               android:textStyle="bold"
+               android:background="@color/colorAccent"
+               android:layout_margin="8dp"
+               android:foreground="?android:selectableItemBackground"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </Button>
+
+
+       </LinearLayout>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/result_txt"
+        android:layout_below="@+id/group"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+</RelativeLayout>
